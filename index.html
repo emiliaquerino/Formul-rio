@@ -7,17 +7,33 @@
 </head>
 <body>
 
+  <h1>Formulário</h1>
+
   <form>
     <fieldset>
-      <legend></legend>
-      <label for="nome">Nome <span class="required">*</span></label>
-      <input type="text" id="nome" name="nome" required>
+      <legend>Dados Pessoais</legend>
+      <label for="nome">Nome:<span class="required">*</span></label>
+      <input type="text" id="nome" name="nome" required></br>
+      <label for="endereço">Endereço:</label>
+      <input type="text" id="endereço" name="endereço"></br>
+      <label for="cidade">Cidade:</label>
+      <input type="text" id="cidade" name="cidade"></br>
+      <label for="estado">Estado:<span class="required">*</span></label>
+      <select id="estado" name="estado" required></br>
+        <option value="alagoas">Alagoas</option>
+        <option value="bahia">Bahia</option>
+        <option value="ceará">Ceará</option>
+        <option value="maranhão">Maranhão</option>
+        <option value="paraíba">Paraíba</option>
+        <option value="pernambuco">Pernambuco</option>
+        <option value="piauí">Piauí</option>
+        <option value="rio grande do norte">Rio Grande do Norte</option>
+        <option value="sergipe">Sergipe</option>
+        </select>
 
-      <label for="estado">Estado <span class="required">*</span></label>
-      <select id="estado" name="estado" required>
-        <option value="" disabled selected>Selecione...</option>
-       .
-       .
+
+
+
 
       </select>
     </fieldset>
