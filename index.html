@@ -18,16 +18,16 @@
   <h1>Formulário</h1>
 
   <form>
-    <fieldset> <!--remover class requered -->
+    <fieldset>
       <legend>Dados Pessoais</legend>
-      <label for="nome">Nome:<class="required"></label><span style="color: red">*</span>
+      <label for="nome">Nome:</label><span style="color: red">*</span>
       <input type="text" id="nome" name="nome" required></br>
       <label for="endereço">Endereço:</label>
-      <input type="text" id="endereço" name="endereço" required></br>
+      <input type="text" id="endereço" name="endereço"></br>
       <label for="cidade">Cidade:</label>
-      <input type="text" id="cidade" name="cidade" required></br>
-      <label for="estado">Estado:<class="required"></span></label><span style="color: red">*</span>
-      <select id="estado" name="estado" required></br>
+      <input type="text" id="cidade" name="cidade"></br>
+      <label for="estado">Estado:</span></label><span style="color: red">*</span>
+      <select id="estado" name="estado" required>
         <option value="alagoas">Alagoas</option>
         <option value="bahia">Bahia</option>
         <option value="ceara">Ceará</option>
@@ -40,10 +40,10 @@
         </select>
     </fieldset>
     <fieldset>
-      <legend>Dados profissionais</legend> <!--OBRIGATORIO-->
+      <legend>Dados profissionais</legend>
       Natureza do Cargo<span style="color: red">*</span></br>
       <input type="radio" id="gerencia" name="Natureza_cargo" value="Gerência" required>
-      <label for="gerencia">Gerência></label>
+      <label for="gerencia">Gerência</label>
       <input type="radio" id="financeiro" name="Natureza_cargo" value="Financeiro" required>
       <label for="financeiro">Financeiro</label>
       <input type="radio" id="recepção" name="Natureza_cargo" value="Recepção"required>
@@ -55,27 +55,31 @@
 
 
       Área de interesse<span style="color: red">*</span></br>
-      <input type="checkbox" id="computaçao" name="area_interesse" value="Computação">
-      <label for="computacao">Computação<class="required"></label>
-      <input type="checkbox" id="biologia" name="area_interesse" value="Biologia">
-      <label for="biologia">Biologia<class="required"></label>
-      <input type="checkbox" id="meio ambiente" name="area_interesse" value="Meio Ambiente">
-      <label for="meio ambiente">Meio Ambiente<class="required"></label>
-      <input type="checkbox" id="engenharia" name="area_interesse" value="Engenharia">
-      <label for="engenharia">Engenharia<class="required"></label>
-      <input type="checkbox" id="historia" name="area_interesse" value="História">
-      <label for="historia">História<class="required"></label></br></br>
+      <input type="checkbox" id="computaçao" name="area_interesse" value="Computação" required>
+      <label for="computacao">Computação></label>
+      <input type="checkbox" id="biologia" name="area_interesse" value="Biologia" required>
+      <label for="biologia">Biologia</label>
+      <input type="checkbox" id="meio ambiente" name="area_interesse" value="Meio Ambiente" required>
+      <label for="meio ambiente">Meio Ambiente</label>
+      <input type="checkbox" id="engenharia" name="area_interesse" value="Engenharia" required>
+      <label for="engenharia">Engenharia</label>
+      <input type="checkbox" id="historia" name="area_interesse" value="História" required>
+      <label for="historia">História</label></br></br>
 
 
       <label for="minicurriculo">Mini-currículo</label><span style="color: red">*</span>
-      <textarea id="minicurriculo" name="minicurriculo" minlegnth="10" maxlength="300" required><br><br>
-    
+      <textarea id="minicurriculo" name="minicurriculo" minlength="10" maxlength="300" required></textarea>
+      </br></br>
+
+      <input type="submit" value="Enviar">
+      <input type="reset" value="Limpar">
 
     </fieldset>
 
-    <button></button>
-    <button></button>
-  </form>
+    
 
+
+
+  </form>
 </body>
 </html>
